@@ -1,0 +1,208 @@
+.team-grid-container .MuiGrid-root {
+    margin: 15px 0px;
+}
+
+.footer-link {
+    font-family: Matter, sans-serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 35px;
+    cursor: pointer;
+    color: "#B8B8B8";
+}
+
+.halfw {
+    width: 50%;
+}
+
+.tile-roadmap h4,
+.tile-roadmap h1,
+.tile-roadmap h2,
+.tile-roadmap h3 {
+    opacity: .5;
+}
+
+.showPercentage {
+    position: relative;
+}
+
+.footerLogo {
+    margin: auto;
+}
+
+.mainLogo {
+    margin-top: -10px;
+}
+
+.content-image-docs {
+    position: absolute;
+    width: 110px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.project-slider .slide {
+    display: inline-block;
+}
+
+.project-slider .slide img {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.project-slider .slide {
+    margin-left: -65px;
+}
+
+.dgr {
+    list-style: none;
+}
+
+.dgr li {
+    display: inline-flex;
+}
+
+.dgr li:not(:last-child):after {
+    content: "|";
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+@media (min-width: 1024px) {
+    .utilities-container {
+        position: relative;
+    }
+
+    .utilities-container:after {
+        position: absolute;
+        content: "PENDING";
+        font-family: 'Formula Condensed';
+        font-size: 2rem;
+        top: calc(50% - 0.9rem);
+        line-height: 2rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 445px) {
+    .about-docs {
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.03);
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+
+    .about-docs img {
+        bottom: unset !important;
+    }
+
+    .about-docs:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .dgr li {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dgr li:not(:last-child):after {
+        display: none;
+    }
+}
+
+.terms-p p,
+.terms-p li {
+    font-size: 20px !important;
+}
+
+.terms-p ol,
+.terms-p ul {
+    padding-left: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+
+.arrow {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 3px solid rgba(255, 255, 255, .5);
+    border-right: 3px solid rgba(255, 255, 255, .5);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 3s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-185px * 11))
+    }
+}
+
+.project-slider .slider {
+
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+}
+
+
+.project-slider .slider-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px*22);
+}
+
+.project-slider .slide {
+    max-width: 250px;
+    padding: 5px;
+}
